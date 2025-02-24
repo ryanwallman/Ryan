@@ -10,6 +10,8 @@ body {
 }
 
 .container {
+    width: 90vw;
+    height: 90vh;
     background: white;
     padding: 20px;
     border-radius: 12px;
