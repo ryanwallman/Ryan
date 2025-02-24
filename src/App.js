@@ -51,7 +51,7 @@ function App() {
           <img src="/headshot.jpg" alt="Ryan Wallman" className="profile-img" />
           <h1 className="title">Ryan Wallman</h1>
           <p className="description">
-            Hello! I'm a web developer passionate about creating amazing digital experiences. I enjoy coding, designing, and learning new technologies.
+            Hello! I'm a senior computer science student at the University of Maryland. I am a full stack developer with experience in numerous technologies. 
           </p>
           <a href="Wallman__Ryan___resume.pdf" className="resume-button" download>
             Download My Resume
