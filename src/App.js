@@ -1,9 +1,12 @@
 import React, { useEffect, useState } from "react";
 import "./App.css";
+import headshot from "./headshot.jpg";
+
 
 const sections = [
   { id: "about", label: "About Me" },
   { id: "projects", label: "Projects" },
+  { id: "skills", label: "Skills" },
   { id: "contact", label: "Contact" }
 ];
 
@@ -48,7 +51,7 @@ function App() {
       </nav>
       <section id="about" className="section">
         <div className="content-container">
-          <img src="/headshot.jpg" alt="Ryan Wallman" className="profile-img" />
+          <img src={headshot} alt="Ryan Wallman" className="profile-img" />
           <h1 className="title">Ryan Wallman</h1>
           <p className="description">
             Hello! I'm a senior computer science student at the University of Maryland. I am a full stack developer with experience in numerous technologies. 
@@ -61,6 +64,11 @@ function App() {
       <section id="projects" className="section">
         <div className="content-container">
           <h1 className="title">Projects</h1>
+        </div>
+      </section>
+      <section id="skills" className="section">
+        <div className="content-container">
+          <h1 className="title">Skills</h1>
         </div>
       </section>
       <section id="contact" className="section">
