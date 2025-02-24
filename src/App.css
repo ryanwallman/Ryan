@@ -1,38 +1,105 @@
-.App {
+/* General Styles */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to right, #1ae586, #0d76bd);
+  color: white;
+  scroll-behavior: smooth;
+}
+
+/* App Container */
+.app-container {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 15px 0;
+  z-index: 1000;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nav-list {
+  list-style: none;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-item {
+  text-decoration: none;
   color: white;
+  font-size: 18px;
+  padding: 10px 15px;
+  transition: color 0.3s ease-in-out;
 }
 
-.App-link {
-  color: #61dafb;
+.nav-item.active {
+  color: #1ae586;
+  font-weight: bold;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Sections */
+.section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Content Container */
+.content-container {
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  max-width: 500px;
+  color: #333;
+  border: 5px solid #0d76bd;
+}
+
+/* Profile Image */
+.profile-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 4px solid #0d76bd;
+  margin-bottom: 20px;
+}
+
+/* Titles */
+.title {
+  font-size: 28px;
+  margin: 10px 0;
+  color: #333;
+}
+
+/* Description */
+.description {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* Resume Button */
+.resume-button {
+  display: inline-block;
+  padding: 12px 20px;
+  background: #0d76bd;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 6px;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.resume-button:hover {
+  background: #085a9e;
+  transform: scale(1.05);
 }
